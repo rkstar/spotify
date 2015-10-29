@@ -14,7 +14,7 @@ OAuth.registerService('spotify', 2, null, function(query){
     serviceData: serviceData,
     options: {
       profile: {
-        name: user.name
+        name: user.display_name
       }
     }
   }
