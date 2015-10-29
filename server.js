@@ -2,7 +2,7 @@ var OAuth = Package.oauth.OAuth
 
 OAuth.registerService('spotify', 2, null, function(query){
   var response = app.getResponseData(query),
-    user = getUserData(response.access_token),
+    user = app.getUserData(response.access_token),
     serviceData = _.extend({
       id: user.id,
       accessToken: response.access_token,
